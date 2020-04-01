@@ -10,7 +10,7 @@
         <!--HistoricoVC-->
         <scene sceneID="7N3-Zt-Dgy">
             <objects>
-                <viewController storyboardIdentifier="HistoricoVC" id="IFf-Pn-xbZ" userLabel="HistoricoVC" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="HistoricoVC" id="IFf-Pn-xbZ" userLabel="HistoricoVC" customClass="HistoricoVC" customModule="Poc1" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8Cz-DV-mXP">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -30,10 +30,20 @@
                                     <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                 </state>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Texto" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o6B-sd-Id8">
+                                <rect key="frame" x="20" y="204" width="42" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="ip1-Xd-rYL"/>
                     </view>
+                    <connections>
+                        <outlet property="lblHistorico" destination="o6B-sd-Id8" id="CdI-S4-Dzt"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="b7O-e5-yUG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

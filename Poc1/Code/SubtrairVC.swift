@@ -14,10 +14,18 @@ class SubtrairVC: UIViewController{
     @IBOutlet weak var txtNum2: UITextField!
     @IBOutlet weak var lblResultado: UILabel!
     
-    @IBAction func Subtrair(_ sender: Any) {
-        var sub = 0;
-        sub = Int(txtNum1.text!)! - Int(txtNum2.text!)!;
-        lblResultado.text = "Resultado: " + String(sub);
+    @IBAction func subtrair(_ sender: Any) {
+        guard let texto1 = txtNum1.text,
+            let texto2 = txtNum2.text,
+            let num1 = Int(texto1),
+            let num2 = Int(texto2)
+            else {
+                    lblResultado.text = "Entrada inválida"
+                    return
+            }
+        
+        let sub = num1 - num2
+        lblResultado.text = "Resultado: " + String(sub)
     }
     
 }

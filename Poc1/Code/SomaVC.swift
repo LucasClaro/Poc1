@@ -14,10 +14,26 @@ class SomaVC: UIViewController{
     @IBOutlet weak var txtNum2: UITextField!
     @IBOutlet weak var lblRes: UILabel!
     
-    @IBAction func Somar(_ sender: Any) {
-        var soma = 0;
-        soma = Int(txtNum1.text!)! + Int(txtNum2.text!)!;
-        lblRes.text = "Resultado: " + String(soma);
+    @IBAction func somar(_ sender: UIButton) {
+        guard let texto1 = txtNum1.text,
+            let texto2 = txtNum2.text,
+            let num1 = Int(texto1),
+            let num2 = Int(texto2)
+            else {
+                lblRes.text = "Entrada inválida"
+                return
+        }
+            
+        let soma = num1 + num2;
+        lblRes.text = "Resultado: " + String(soma)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "SegueParaCalculadora"{
+            /*if let destiantionVC = segue.destination as? MenuVC{
+                
+            }*/
+        }
     }
     
 }

@@ -50,7 +50,7 @@
                                     <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                 </state>
                                 <connections>
-                                    <action selector="Somar:" destination="P6P-q2-9Yb" eventType="touchUpInside" id="4V5-Me-ckP"/>
+                                    <action selector="somar:" destination="P6P-q2-9Yb" eventType="touchUpInside" id="4V5-Me-ckP"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Resultado: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MwC-VF-ZKJ">
@@ -109,9 +109,6 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
-                                <connections>
-                                    <action selector="txtNum2:" destination="TVl-U8-wC2" eventType="editingDidEnd" id="qnC-By-E5I"/>
-                                </connections>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r1f-MD-Vxb">
                                 <rect key="frame" x="20" y="246" width="65" height="34"/>
@@ -121,7 +118,7 @@
                                     <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                 </state>
                                 <connections>
-                                    <action selector="Subtrair:" destination="TVl-U8-wC2" eventType="touchUpInside" id="uIl-S8-Ssl"/>
+                                    <action selector="subtrair:" destination="TVl-U8-wC2" eventType="touchUpInside" id="uIl-S8-Ssl"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Resultado: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iir-oy-ieL">
