@@ -11,6 +11,9 @@
 		B61A1D922433C9750081D489 /* SubtrairVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B61A1D912433C9750081D489 /* SubtrairVC.swift */; };
 		B61A1D942433DA560081D489 /* Historico.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B61A1D932433DA560081D489 /* Historico.storyboard */; };
 		B6466B292435388F00EB3C8B /* HIstoricoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6466B282435388F00EB3C8B /* HIstoricoVC.swift */; };
+		B6466B2B243541C300EB3C8B /* MenuVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6466B2A243541C300EB3C8B /* MenuVC.swift */; };
+		B6466B2D2436627F00EB3C8B /* ClosureVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6466B2C2436627F00EB3C8B /* ClosureVC.swift */; };
+		B6466B332436759E00EB3C8B /* MeuBtn.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6466B322436759E00EB3C8B /* MeuBtn.swift */; };
 		B6A1DB7B24326F7D009EF865 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6A1DB7A24326F7D009EF865 /* AppDelegate.swift */; };
 		B6A1DB7D24326F7D009EF865 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6A1DB7C24326F7D009EF865 /* SceneDelegate.swift */; };
 		B6A1DB7F24326F7D009EF865 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6A1DB7E24326F7D009EF865 /* ViewController.swift */; };
@@ -44,6 +47,9 @@
 		B61A1D912433C9750081D489 /* SubtrairVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubtrairVC.swift; sourceTree = "<group>"; };
 		B61A1D932433DA560081D489 /* Historico.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Historico.storyboard; sourceTree = "<group>"; };
 		B6466B282435388F00EB3C8B /* HIstoricoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HIstoricoVC.swift; sourceTree = "<group>"; };
+		B6466B2A243541C300EB3C8B /* MenuVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuVC.swift; sourceTree = "<group>"; };
+		B6466B2C2436627F00EB3C8B /* ClosureVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClosureVC.swift; sourceTree = "<group>"; };
+		B6466B322436759E00EB3C8B /* MeuBtn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeuBtn.swift; sourceTree = "<group>"; };
 		B6A1DB7724326F7D009EF865 /* Poc1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Poc1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6A1DB7A24326F7D009EF865 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B6A1DB7C24326F7D009EF865 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -92,8 +98,18 @@
 				B61A1D8F2433B8D50081D489 /* SomaVC.swift */,
 				B61A1D912433C9750081D489 /* SubtrairVC.swift */,
 				B6466B282435388F00EB3C8B /* HIstoricoVC.swift */,
+				B6466B2A243541C300EB3C8B /* MenuVC.swift */,
+				B6466B2C2436627F00EB3C8B /* ClosureVC.swift */,
 			);
 			path = Code;
+			sourceTree = "<group>";
+		};
+		B6466B312436754800EB3C8B /* Elementos */ = {
+			isa = PBXGroup;
+			children = (
+				B6466B322436759E00EB3C8B /* MeuBtn.swift */,
+			);
+			path = Elementos;
 			sourceTree = "<group>";
 		};
 		B6A1DB6E24326F7D009EF865 = {
@@ -119,6 +135,7 @@
 		B6A1DB7924326F7D009EF865 /* Poc1 */ = {
 			isa = PBXGroup;
 			children = (
+				B6466B312436754800EB3C8B /* Elementos */,
 				B61A1D8E2433B89C0081D489 /* Code */,
 				B6A1DBAA2432700A009EF865 /* Storyboards */,
 				B6A1DB7A24326F7D009EF865 /* AppDelegate.swift */,
@@ -292,9 +309,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B6466B2D2436627F00EB3C8B /* ClosureVC.swift in Sources */,
 				B61A1D922433C9750081D489 /* SubtrairVC.swift in Sources */,
 				B61A1D902433B8D50081D489 /* SomaVC.swift in Sources */,
 				B6A1DB7F24326F7D009EF865 /* ViewController.swift in Sources */,
+				B6466B332436759E00EB3C8B /* MeuBtn.swift in Sources */,
+				B6466B2B243541C300EB3C8B /* MenuVC.swift in Sources */,
 				B6A1DB7B24326F7D009EF865 /* AppDelegate.swift in Sources */,
 				B6A1DB7D24326F7D009EF865 /* SceneDelegate.swift in Sources */,
 				B6466B292435388F00EB3C8B /* HIstoricoVC.swift in Sources */,

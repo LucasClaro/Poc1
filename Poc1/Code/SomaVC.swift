@@ -14,6 +14,8 @@ class SomaVC: UIViewController{
     @IBOutlet weak var txtNum2: UITextField!
     @IBOutlet weak var lblRes: UILabel!
     
+    var conta = [String]()
+    
     @IBAction func somar(_ sender: UIButton) {
         guard let texto1 = txtNum1.text,
             let texto2 = txtNum2.text,
@@ -26,14 +28,17 @@ class SomaVC: UIViewController{
             
         let soma = num1 + num2;
         lblRes.text = "Resultado: " + String(soma)
+        
+        conta.append(texto1 + " + " + texto2 + " = " + String(soma))
     }
-    
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "SegueParaCalculadora"{
-            /*if let destiantionVC = segue.destination as? MenuVC{
-                
-            }*/
-        }
-    }
+        
+//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+//        print("Entrei")
+//        if segue.identifier == "SegueParaCalculadora"{
+//            if let destiantionVC = segue.destination as? MenuVC{
+//                destiantionVC.hist = "Teste"
+//            }
+//        }
+//    }
     
 }
