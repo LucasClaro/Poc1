@@ -19,4 +19,11 @@ class MenuVC: UIViewController {
         
         hist += somaVC.conta
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?){
+        if let historicoVC = segue.destination as? HistoricoTableVC {
+            historicoVC.dataSource = hist
+        }
+        
+    }
 }

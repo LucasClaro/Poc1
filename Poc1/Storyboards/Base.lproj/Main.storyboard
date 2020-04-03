@@ -46,10 +46,10 @@
             </objects>
             <point key="canvasLocation" x="1047.8260869565217" y="115.84821428571428"/>
         </scene>
-        <!--HistoricoVC-->
+        <!--HistoricoTableVC-->
         <scene sceneID="u6H-FW-VxP">
             <objects>
-                <viewControllerPlaceholder storyboardName="Historico" referencedIdentifier="HistoricoVC" id="Ep2-4M-7RO" sceneMemberID="viewController">
+                <viewControllerPlaceholder storyboardName="Historico" referencedIdentifier="HistoricoTableVC" id="Ep2-4M-7RO" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="XlQ-sD-tg8"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pPM-WN-dkK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
