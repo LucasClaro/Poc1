@@ -12,6 +12,7 @@ import UIKit
 class HistoricoTableVC: UITableViewController{
     
     var dataSource = [String]()
+    weak var historicoDelegate: HistoricoDelegate?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -33,6 +34,8 @@ class HistoricoTableVC: UITableViewController{
         if editingStyle == UITableViewCell.EditingStyle.delete {
             dataSource.remove(at: indexPath.row)
             tableView.deleteRows(at: [indexPath], with: UITableView.RowAnimation.automatic)
+            
+            historicoDelegate?.contaFoiDeletada(index: indexPath.row)
         }
     }
     

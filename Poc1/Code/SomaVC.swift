@@ -14,7 +14,10 @@ class SomaVC: UIViewController{
     @IBOutlet weak var txtNum2: UITextField!
     @IBOutlet weak var lblRes: UILabel!
     
-    var conta = [String]()
+    //var conta = [String]()
+    
+    //Opcional porque não necessariamente alguém quer ouvir essas notícias, então é assim: se alguém quiser ouvir, muito bem, se não quiser, tudo bem, é uma variável opcional.
+    weak var historicoDelegate: HistoricoDelegate?
     
     @IBAction func somar(_ sender: UIButton) {
         guard let texto1 = txtNum1.text,
@@ -29,16 +32,10 @@ class SomaVC: UIViewController{
         let soma = num1 + num2;
         lblRes.text = "Resultado: " + String(soma)
         
-        conta.append(texto1 + " + " + texto2 + " = " + String(soma))
-    }
+        //conta.append(texto1 + " + " + texto2 + " = " + String(soma))
         
-//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-//        print("Entrei")
-//        if segue.identifier == "SegueParaCalculadora"{
-//            if let destiantionVC = segue.destination as? MenuVC{
-//                destiantionVC.hist = "Teste"
-//            }
-//        }
-//    }
+        //Reportar as notícias.
+        historicoDelegate?.contaFoiAdicionada(conta: texto1 + " + " + texto2 + " = " + String(soma))
+    }
     
 }

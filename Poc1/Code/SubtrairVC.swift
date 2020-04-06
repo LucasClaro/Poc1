@@ -14,6 +14,8 @@ class SubtrairVC: UIViewController{
     @IBOutlet weak var txtNum2: UITextField!
     @IBOutlet weak var lblResultado: UILabel!
     
+    weak var historicoDelegate: HistoricoDelegate?
+    
     @IBAction func subtrair(_ sender: Any) {
         guard let texto1 = txtNum1.text,
             let texto2 = txtNum2.text,
@@ -26,6 +28,8 @@ class SubtrairVC: UIViewController{
         
         let sub = num1 - num2
         lblResultado.text = "Resultado: " + String(sub)
+        
+        historicoDelegate?.contaFoiAdicionada(conta: texto1 + " + " + texto2 + " = " + String(sub))
     }
     
 }
